@@ -6,6 +6,8 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>WhatsApp DM Generator</title>
 
+    <link rel="stylesheet" href="css/style.css">
+
     <link rel="shortcut icon" href="whatsapp-logo-png-2272-128x128.ico" type="image/x-icon">
 
     <link
@@ -65,30 +67,26 @@
       "
     >
       <div class="inputDiv">
-        <form action="link.html" method="post">
-          <label for="phoneNo"> Contact Number:- </label>
-        
-          <div class="input-group flex-nowrap">
-            <span class="input-group-text" id="addon-wrapping">+91</span>
-            <input 
-              type="tel"
-              name="phoneNo" 
-              id="phn" 
-              class="form-control" 
-              pattern="[0-9]{10}"
-              required
-              placeholder="9999999999" 
-              aria-label="phoneNo" 
-              aria-describedby="addon-wrapping"
-            >
-          </div>
-          <button 
-            type="submit" 
-            class="btn btn-outline-success"
-            onclick="myFunc()">
-            continue
-          </button>
-        </form>
+        <label for="phoneNo"> Contact Number:- </label>
+        <div class="input-group flex-nowrap">
+          <span class="input-group-text" id="addon-wrapping">+91</span>
+          <input 
+            type="tel"
+            name="phoneNo" 
+            id="phn" 
+            class="form-control" 
+            pattern="[0-9]{10}"
+            required
+            placeholder="9999999999" 
+            aria-label="phoneNo" 
+            aria-describedby="addon-wrapping"
+          >
+        </div>
+        <p class="btn btn-outline-success" id="submitButton">Continue</p>
+      </div>
+      <div class="outputDiv hidden" id="otp_div">
+        <p id="otp_p">waiting...</p>
+        <a href="" class="btn btn-outline-success" id="otp">refresh</a>
       </div>
     </div>
     <!-- <div class="footer"></div> -->
