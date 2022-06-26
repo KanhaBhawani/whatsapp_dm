@@ -1,6 +1,4 @@
-
-
-document.getElementById("submitButton").addEventListener("click", ()=>{
+function myFunc(){
     var phoneNumber = document.getElementById("phn").value;
-    document.getElementById("otp").href = "https://wa.me/+91" + phoneNumber;
-});
+    localStorage.setItem('phoneNo', phoneNumber);
+};

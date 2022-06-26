@@ -62,19 +62,22 @@
       "
     >
       <div class="inputDiv">
-        <label for="phoneNo"> Contact Number:- </label>
-        <input
-          type="tel"
-          name="phoneNo"
-          id="phn"
-          placeholder="Don't use 0 or +91"
-          pattern="[0-9]{10}"
-          required
-        />
-        <p id="submitButton">Continue</p>
-      </div>
-      <div class="outputDiv">
-        <a href="" id="otp">Continue to chat</a>
+        <form action="link.html" method="post">
+          <label for="phoneNo"> Contact Number:- </label>
+          <input
+            type="tel"
+            name="phoneNo"
+            id="phn"
+            placeholder="Don't use 0 or +91"
+            pattern="[0-9]{10}"
+            required
+          />
+          <button 
+            type="submit" 
+            onclick="myFunc()">
+            continue
+          </button>
+        </form>
       </div>
     </div>
     <!-- <div class="footer"></div> -->
