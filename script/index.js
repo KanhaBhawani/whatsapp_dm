@@ -6,4 +6,5 @@ document.getElementById("submitButton").addEventListener("click", ()=>{
     document.getElementById("otp_p").innerText = "Chat on WhatsApp with +91 " + phoneNumber;
     document.getElementById("otp").href = "https://wa.me/+91" + phoneNumber;
     document.getElementById("otp").innerText = "Continue to Chat";
+    new QRCode(document.getElementById("QrCode"), "https://wa.me/+91" + phoneNumber);
 });
